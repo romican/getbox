@@ -1,24 +1,27 @@
 <header class="container-fluid">
   <div class="container">
     <div class="row">
-      <div class="col-4">
+      <div class="col-4 label_gb">
         <h1>
-          <a href="<?php echo BASE_URL?>">getbox</a>
+          <a href="index.php">getbox</a>
         </h1>
       </div>
       <nav class="col-8">
         <ul>
-          <li><a href="<?php echo BASE_URL?>">Главная</a></li>
+          <li><a href="index.php">Главная</a></li>
           <li><a href="/">Контакты</a></li>
-          <li><a href="/">Доставка</a></li>
+          <li><a href="calc.php">Доставка</a></li>
           <li>
-          <li><a href="/">Магазины</a></li>
+          <li><a href="shop.php">Магазины</a></li>
           <li>
-            <a href="log.php">
+            <a href="reg.php">
               <i class="fa fa-user"></i>
               Личный кабинет
             </a>
             <ul>
+              <li>
+                <a href="reg.php">Регистрация</a>
+              </li>
               <li>
                 <a href="log.php">Войти</a>
               </li>

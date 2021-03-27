@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <link id="favicon-link" rel="icon" href="/getbox/favicon.ico" type="image/x-icon">
+  <link id="favicon-link" rel="icon" href="favicon.ico" type="image/x-icon">
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -20,7 +20,7 @@
       crossorigin="anonymous"
     ></script>
     <!-- CSS Styles/style.css -->
-<link rel="stylesheet" href="/getbox/assets/css/style.css">
+    <link rel="stylesheet" href="/getbox/assets/css/style.css">
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -49,7 +49,7 @@
             <div
               class="carousel-caption carousel-caption-hack d-none d-md-block"
             >
-              <h5><a href="">Новые условия доставки из США</a></h5>
+              <h5><a href="/getbox/single.php">Условия доставки из США</a></h5>
             </div>
           </div>
           <div class="carousel-item">
@@ -57,7 +57,7 @@
             <div
               class="carousel-caption carousel-caption-hack d-none d-md-block"
             >
-              <h5><a href="single.php">Выдача заказов в ПВЗ</a></h5>
+              <h5><a href="/getbox/single.php">Выдача заказов в ПВЗ</a></h5>
             </div>
           </div>
           <div class="carousel-item">
@@ -128,7 +128,7 @@
             </div>
             <div class="post_text col-12 col-md-8">
               <h3>
-                <a href="single.html">Выдача заказов в ПВЗ</a>
+                <a href="single.php">Выдача заказов в ПВЗ</a>
               </h3>
               <i class="far fa-user"> Имя автора</i>
               <i class="far fa-calendar"> Mar 24, 2021</i>
@@ -138,51 +138,14 @@
             </div>
           </div>
         </div>
-        <!-- sidebar content -->
-      <div class="sidebar col-md-3 col-12">
-      <div class="section search">
-          <h3>Поиск</h3>
-          <form action="/" method="POST">
-          <input
-              type="text"
-              name="search-term"
-              class="text-input"
-              placeholder="Введите что искать..."
-          />
-          </form>
-          </div>
-              <div class="section topics">
-                <h3>Категории</h3>
-                <ul>
-                  <li><a href="/">Информация</a></li>
-                  <li><a href="/">Форум</a></li>
-                  <li><a href="/">Олпата</a></li>
-                  <li><a href="/">Новый заказ</a></li>
-                  <li><a href="/">Белпочта</a></li>
-                </ul>
-              </div>
-            </form>
-          
-        </div>
+        <!-- sidebar content start -->
+        <?php include("app/include/sidebar.php");?>
+         <!-- sidebar content end-->
       </div>
     </div>
     <!-- Блок MAIN КОНЕЦ -->
     <!-- footer start -->
     <?php include("app/include/footer.php");?>
     <!-- footer end -->
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
-    -->
   </body>
 </html>

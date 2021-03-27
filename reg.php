@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <link id="favicon-link" rel="icon" href="/getbox/favicon.ico" type="image/x-icon">
+  <link id="favicon-link" rel="icon" href="favicon.ico" type="image/x-icon">
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />

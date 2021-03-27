@@ -2,13 +2,16 @@
       <div class="footer-content container">
         <div class="row">
           <div class="footer-section about col-md-4 col-12">
-            <h3 class="logo-text">Мой блог</h3>
+            <h3 class="logo-text">getbox</h3>
               <p>
-                Мой блог - это блог сделанный с целью обучения аудитории на платформе ютуб и заработка дополнительной кармы.
+              ПВЗ getbox в Минске:
+ул.Захарова, 50В, офис 1Н, Минск, 220088
               </p>
               <div class="contact">
-                <span><i class="fas fa-phone"></i> &nbsp; 123-456-789</span>
-                <span><i class="fas fa-envelope"></i> &nbsp; info@myblog.com</span>
+                <span><i class="fas fa-phone"></i> &nbsp; +375 29 6970066 A1(viber, telegram)</span>
+                <span><i class="fas fa-envelope"></i> &nbsp; support@getbox.me</span>
+                <br>
+                <br>
               </div>
               <div class="socials">
                 <a href="/"><i class="fab fa-facebook"></i></a>
@@ -23,19 +26,19 @@
             <br>
             <ul>
                 <a href="/">
-                    <li>События</li>
+                    <li>Бизнесу</li>
                 </a>
                 <a href="/">
-                    <li>Команда</li>
+                    <li>Способы доставки</li>
                 </a>
                 <a href="/">
-                    <li>Упражнения</li>
+                    <li>Необходимо знать</li>
                 </a>
                 <a href="/">
-                    <li>Галлерея</li>
+                    <li>Виды упаковок</li>
                 </a>
                 <a href="/">
-                    <li>Что-то ещё</li>
+                    <li>Расписание вылетов</li>
                 </a>
             </ul>
           </div>

@@ -36,6 +36,7 @@ header {
 header * {
   color: #ffffff;
 }
+
 header h1 {
   margin-top: 12px;
 }
@@ -184,6 +185,7 @@ header ul li ul li a {
 .sidebar .topics ul li a:hover {
   padding-left: 10px;
   transition: all 0.3s;
+  color: #a075d2;
 }
 /* footer */
 .footer {
@@ -266,6 +268,9 @@ header ul li ul li a {
   left: 0px;
   /* padding-top: 20px; */
 }
+.footer textarea {
+  resize: none;
+}
 /* Single post */
 .single_post {
   margin-bottom: 30px;
@@ -302,4 +307,22 @@ header ul li ul li a {
 .reg_form a:hover {
   margin-left: 55px;
   transition: all 0.3s;
+}
+/* shop cards */
+.shop_card_line {
+  margin: 10px 0px;
+}
+.shop_card_line .card {
+  margin-right: 5px;
+}
+.shop_card_line .card .card-img-top {
+  padding-top: 20px;
+}
+.card-body .btn-shop {
+  background: #a075d2;
+  border-color: #a075d2;
+}
+.sub_text {
+  color: #949494;
+  text-align: left;
 }
