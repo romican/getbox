@@ -9,7 +9,7 @@
       <nav class="col-8">
         <ul>
           <li><a href="index.php">Главная</a></li>
-          <li><a href="/">Контакты</a></li>
+          <li><a href="contact.php">Контакты</a></li>
           <li><a href="calc.php">Доставка</a></li>
           <li>
           <li><a href="shop.php">Магазины</a></li>

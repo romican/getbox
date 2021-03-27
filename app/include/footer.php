@@ -22,7 +22,7 @@
           </div>
 
           <div class="footer-section links col-md-4 col-12">
-            <h3>Quick Links</h3>
+            <h3>Полезные ссылки</h3>
             <br>
             <ul>
                 <a href="/">
