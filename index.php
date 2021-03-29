@@ -1,4 +1,3 @@
-<?php include("path.php");?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -20,7 +19,7 @@
       crossorigin="anonymous"
     ></script>
     <!-- CSS Styles/style.css -->
-    <link rel="stylesheet" href="/getbox/assets/css/style.css">
+    <link rel="stylesheet" href="../getbox/assets/css/style.css">
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link

@@ -295,7 +295,8 @@ header ul li ul li a {
   margin: 30px 0;
 }
 .reg_form input {
-  height: 3.64rem;
+  height: 2.8rem;
+  font-size: 0.85em;
 }
 .reg_form a {
   font-size: 1.2em;
@@ -307,6 +308,10 @@ header ul li ul li a {
 .reg_form a:hover {
   margin-left: 55px;
   transition: all 0.3s;
+}
+.reg_form .alert {
+  font-weight: bold;
+  text-align: center;
 }
 /* shop cards */
 .shop_card_line {

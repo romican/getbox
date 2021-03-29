@@ -1,4 +1,9 @@
-<?php include("path.php");?>
+<?php 
+session_start();
+  if ($_SESSION['user']) {
+    header('Location:/getbox/profile.php');
+  }
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -31,57 +36,56 @@
   </head>
 
   <body>
-    <!-- Блок шапки и меню старт -->
     <?php include("app/include/header.php");?>
-    <!-- Блок шапки и меню конец -->
-    <!-- FORM start -->
+
     <div class="container reg_form">
-      <form class="row justify-content-center" method="POST" action="log.html">
+
+      <form class="row justify-content-center" method="POST" action="../getbox/app/database/signin.php">
         <h2>Авторизация</h2>
         <div class="mb-3 col-12 col-md-4">
           <label for="formGroupExampleInput" class="form-label"
-            >Ваш логин</label
+            >Логин</label
           >
           <input
             type="text"
+            name="login"
             class="form-control"
             id="formGroupExampleInput"
-            placeholder="Введите Ваш логин"
-          />
+            />
         </div>
         <div class="w-100"></div>
         <div class="mb-3 col-12 col-md-4">
           <label for="exampleInputPassword1" class="form-label">Пароль</label>
           <input
             type="password"
+            name="password"
             class="form-control"
             id="exampleInputPassword1"
           />
+          <br>
+            <?php
+                if ($_SESSION['message']) {
+                  echo '<div class="alert alert-danger" role="alert">'.$_SESSION['message'] . '</div>';
+                }
+            echo $_SESSION['message'];
+            unset($_SESSION['message']);
+            ?>        
         </div>
+        
         <div class="w-100"></div>
+
         <div class="mb-3 col-12 col-md-4">
-          <button type="button" class="btn btn-outline-secondary">Войти</button>
+          <button type="submit" class="btn btn-outline-secondary">Войти</button>
           <a href="reg.php">Регистрация</a>
         </div>
       </form>
     </div>
-    <!-- FORM end -->
-    <!-- footer start -->
-    <?php include("app/include/footer.php");?>
-    <!-- footer end -->
-    <!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <?php include("app/include/footer.php");?>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
       crossorigin="anonymous"
     ></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
-    -->
   </body>
 </html>

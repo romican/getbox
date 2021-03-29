@@ -1,4 +1,9 @@
-<?php include("path.php");?>
+<?php 
+session_start();
+if ($_SESSION['user']) {
+  header('Location:/getbox/profile.php');
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -30,84 +35,110 @@
     <title>getbox - международный ассистент доставки из США</title>
   </head>
 
-  <body>
-    <!-- Блок шапки и меню старт -->
+  <body> 
     <?php include("app/include/header.php");?>
-    <!-- Блок шапки и меню конец -->
-    <!-- FORM start -->
+
     <div class="container reg_form">
-      <form class="row justify-content-center" method="POST" action="reg.html">
+
+      <form class="row justify-content-center" method="POST" action="../getbox/app/database/signup.php" enctype="multipart/form-data">
         <h2>Форма регистрации</h2>
+
         <div class="mb-3 col-12 col-md-4">
           <label for="formGroupExampleInput" class="form-label"
-            >Ваш логин</label
-          >
+            >ФИО</label>
           <input
             type="text"
+            name="full_name"
             class="form-control"
             id="formGroupExampleInput"
-            placeholder="Введите Ваш логин"
+            placeholder="Введите свое полное имя"
           />
         </div>
         <div class="w-100"></div>
+
+        <div class="mb-3 col-12 col-md-4">
+          <label for="formGroupExampleInput" class="form-label"
+            >Логин</label>
+          <input
+            type="text"
+            name="login"
+            class="form-control"
+            id="formGroupExampleInput"
+            placeholder="Введите свой логин"
+          />
+        </div>
+
+        <div class="w-100"></div>
+
         <div class="mb-3 col-12 col-md-4">
           <label for="exampleInputEmail1" class="form-label">Email</label>
           <input
             type="email"
+            name="email"
             class="form-control"
             id="exampleInputEmail1"
             aria-describedby="emailHelp"
+            placeholder="Введите адрес электронной почты"
           />
           <div id="emailHelp" class="form-text">
             Ваш е-мейл не будет использован для спама.
           </div>
         </div>
+
         <div class="w-100"></div>
+
         <div class="mb-3 col-12 col-md-4">
           <label for="exampleInputPassword1" class="form-label">Пароль</label>
           <input
             type="password"
+            name="password"
             class="form-control"
             id="exampleInputPassword1"
+            placeholder="Введите свой пароль"
           />
         </div>
+
         <div class="w-100"></div>
+
         <div class="mb-3 col-12 col-md-4">
           <label for="exampleInputPassword2" class="form-label"
             >Подтвердите пароль</label
           >
           <input
             type="password"
+            name="password_confirm"
             class="form-control"
             id="exampleInputPassword2"
           />
-        </div>
+          <br>
+
+          <?php
+              if ($_SESSION['message']) {
+                 echo '<div class="alert alert-danger" role="alert">'.$_SESSION['message'] . '</div>';
+              }
+          echo $_SESSION['message'];
+          unset($_SESSION['message']);
+          ?>
+
+        </div>     
+
         <div class="w-100"></div>
+
         <div class="mb-3 col-12 col-md-4">
-          <button type="button" class="btn btn-outline-secondary">
+          <button type="submit" class="btn btn-outline-secondary">
             Регистрация
           </button>
           <a href="log.php">Войти</a>
         </div>
       </form>
     </div>
-    <!-- FORM end -->
-    <!-- footer start -->
+    
     <?php include("app/include/footer.php");?>
-    <!-- footer end -->
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
+   
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
       crossorigin="anonymous"
     ></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
-    -->
   </body>
 </html>
