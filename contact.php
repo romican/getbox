@@ -27,7 +27,7 @@
       href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <title>getbox - международный ассистент доставки из США</title>
+    <title>getbox - Информация</title>
   </head>
 
   <body>
@@ -36,10 +36,10 @@
     <div class="container">
       <div class="content row">
 <div class="main-content col-md-9 col-12">
-          <h2>Контакты</h2>
+          <h2>Информация</h2>
 <p>Контакты
-В Республике Беларусь:
-+375 29 6970066 A1(viber, telegram)
+В Республике Беларусь: <br>
++375 29 6970066      A1(viber, telegram) <br>
 support@getbox.me
 </p>
 
@@ -51,31 +51,45 @@ support@getbox.me
   <div class="accordion-item">
     <h2 class="accordion-header" id="flush-headingOne">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-        Accordion Item #1
+      ПВЗ getbox в Минске:
       </button>
     </h2>
     <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+      <div class="accordion-body">ул.Захарова, 50В, офис 1Н, Минск, 220088</div>
     </div>
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header" id="flush-headingTwo">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-        Accordion Item #2
+      Время работы пункта выдачи заказов в Минске(ПВЗ):
       </button>
     </h2>
     <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+      <div class="accordion-body">Пн-Пт — 10.00 — 19.00; <br>cб — 10.00 — 16.00; <br>вс — выходной.</div> 
     </div>
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header" id="flush-headingThree">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-        Accordion Item #3
+      Отправка почты по РБ:
       </button>
     </h2>
     <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+      <div class="accordion-body"> <a href="https://getbox.me/belpost">https://getbox.me/belpost </a><br>
+
+Посылки отправляются каждый рабочий с понедельника по пятницу.
+По субботам и праздничным дням отправка почты не производится.</div>
+    </div>
+  </div>
+  
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFor" aria-expanded="false" aria-controls="flush-collapseFor">
+      Схема проезда
+      </button>
+    </h2>
+    <div id="flush-collapseFor" class="accordion-collapse collapse" aria-labelledby="flush-headingFor" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"><img class="imgfaq" src="/getbox/assets/images/getbox-map-1024x750.jpg" alt=""></div> 
     </div>
   </div>
 </div>

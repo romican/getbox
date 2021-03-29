@@ -44,7 +44,7 @@
 
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="/getbox/assets/images/lg-3.jpeg" class="d-block w-100" alt="..." />
+            <img src="/getbox/assets/images/imgonline-com-ua-Resize-QmcPguQva4gSj9Xq.jpg" class="d-block w-100" alt="..." />
             <div
               class="carousel-caption carousel-caption-hack d-none d-md-block"
             >
@@ -52,7 +52,7 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img src="/getbox/assets/images/lg-2.png" class="d-block w-100" alt="..." />
+            <img src="/getbox/assets/images/123.jpg" class="d-block w-100" alt="..." />
             <div
               class="carousel-caption carousel-caption-hack d-none d-md-block"
             >
@@ -60,11 +60,11 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img src="/dinamic-site/assets/images/img-1.jpg" class="d-block w-100" alt="..." />
+            <img src="/getbox/assets/images/lg-2.png" class="d-block w-100" alt="..." />
             <div
               class="carousel-caption carousel-caption-hack d-none d-md-block"
             >
-              <h5><a href="">Third slide label</a></h5>
+              <h5><a href="">Здравствуйте</a></h5>
             </div>
           </div>
         </div>
@@ -99,7 +99,7 @@
           <div class="post row">
             <div class="img col-12 col-md-4">
               <img
-                src="/getbox/assets/images/getbox.jpg"
+                src="/getbox/assets/images/imgonline-com-ua-Resize-QmcPguQva4gSj9Xq.jpg"
                 alt=""
                 class="img-thumbnail"
               />
@@ -120,7 +120,7 @@
           <div class="post row">
             <div class="img col-12 col-md-4">
               <img
-                src="/getbox/assets/images/sm-1.jpg"
+                src="/getbox/assets/images/123.jpg"
                 alt=""
                 class="img-thumbnail"
               />
@@ -136,6 +136,29 @@
               </p>
             </div>
           </div>
+
+          <div class="post row">
+            <div class="img col-12 col-md-4">
+              <img
+                src="/getbox/assets/images/lg-2.png"
+                alt=""
+                class="img-thumbnail"
+              />
+            </div>
+            <div class="post_text col-12 col-md-8">
+              <h3>
+                <a href="single.php">Здравствуйте</a>
+              </h3>
+              <i class="far fa-user"> Имя автора</i>
+              <i class="far fa-calendar"> Mar 24, 2021</i>
+              <p class="preview-text">
+              Мы предоставляем услуги по совместной покупке в американских интернет-магазинах.
+После поступления ваших заказов на склад в США, мы формируем за вас посылки и отправляем их в Беларусь через Россию, где они проходят таможенное оформление.
+              </p>
+            </div>
+          </div>
+
+
         </div>
         <!-- sidebar content start -->
         <?php include("app/include/sidebar.php");?>

@@ -27,15 +27,15 @@
       href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <title>getbox - международный ассистент доставки из США</title>
+    <title>Калькулятор стоимости доставки</title>
   </head>
 
   <body>
 <?php include("app/include/header.php");?>
 
     <div class="container">
-      <div class="content row">
-<div class="main-content col-md-9 col-12">
+      <div class="content row ">
+<div class="main-content col-md-9 col-12 calc-all">
           <h2>Калькулятор стоимости доставки</h2>
 <!-- Выбор стран старт -->
 <div class="row">
@@ -54,7 +54,7 @@
         <div class="calc_main col-6">
     <p class="sub_text">Страна назначения*</p>
             <select class="form-select" aria-label="Default select example">
-        <option selected>Выберите страну назначения посылки</option>
+        <option selected>Выберите страну назначения</option>
         <option value="1">Беларусь</option>
         <option value="2">Россия</option>
         <option value="3">Казахстан</option>
@@ -65,9 +65,9 @@
 <!-- Выбор стран конец -->
 <br><br>
 <!-- выбор опций старт -->
-<div class="row">
-    <div class="col-md-4">
-        <div class="form-check form-switch">
+<div class="row ">
+    <div class="col-md-4 calc-usl">
+        <div class="form-check form-switch ">
 
         <p class="sub_text">Дополнительные услуги*</p>
 
@@ -89,29 +89,29 @@
 </div>
     </div>
 
-    <div class="col-md-4">
+    <div class="col-md-4 calc-usl">
     <p class="sub_text">Способ упаковки посылки*</p>
     <div class="form-check">
   <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-  <label class="form-check-label" for="flexRadioDefault1">
-    Коробка
+  <label class="form-check-label" for="flexRadioDefault1"> 
+  Коробка
   </label>
 </div>
 <div class="form-check">
   <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
   <label class="form-check-label" for="flexRadioDefault2">
-    Пакет
+     Пакет
   </label>
 </div>
 <div class="form-check">
   <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
   <label class="form-check-label" for="flexRadioDefault3">
-  Воздушно-пузырьковая упаковочная пленка
+   Упаковочная пленка
   </label>
 </div>
 </div>
 
-<div class="col-md-4">
+<div class="col-md-4 calc-usl">
 <p class="sub_text">Способ доставки*</p>
 <div class="form-check">
   <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
@@ -151,6 +151,24 @@
     <br>
 </div>
 <!-- бегунок конец -->
+<br>
+<!-- вес старт -->
+<div class="row g-3 align-items-center">
+  <div class="col-auto">
+    <label for="inputPassword6" class="col-form-label">Вес посылки</label>
+  </div>
+  <div class="col-auto">
+    <input type="text" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+  </div>
+  <div class="col-auto">
+    
+<select class="form-select form-select-sm" aria-label=".form-select-sm example">
+  <option selected>КГ</option>
+  <option value="1">ФУНТЫ</option>
+</select>
+  </div>
+</div>
+<!-- вес конец -->
 <br>
 <!-- кнопка расчитать старт -->
 <div class="row">

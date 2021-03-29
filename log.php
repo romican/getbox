@@ -32,7 +32,7 @@ session_start();
       href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <title>getbox - международный ассистент доставки из США</title>
+    <title>Авторизация</title>
   </head>
 
   <body>
@@ -67,7 +67,6 @@ session_start();
                 if ($_SESSION['message']) {
                   echo '<div class="alert alert-danger" role="alert">'.$_SESSION['message'] . '</div>';
                 }
-            echo $_SESSION['message'];
             unset($_SESSION['message']);
             ?>        
         </div>

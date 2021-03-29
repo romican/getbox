@@ -44,7 +44,7 @@
 <div class="single_post row">
     <div class="img col-12">
     <img
-        src="/getbox/assets/images/lg-3.jpeg"
+        src="/getbox/assets/images/imgonline-com-ua-Resize-QmcPguQva4gSj9Xq.jpg"
         alt=""
         class="img-thumbnail"
     />

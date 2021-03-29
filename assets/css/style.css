@@ -331,3 +331,22 @@ header ul li ul li a {
   color: #949494;
   text-align: left;
 }
+/* calculator page */
+.calc-all {
+  font-size: 0.94em;
+}
+.calc_main {
+  width: 360px;
+}
+.calc-usl label {
+  font-size: 0.94em;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-top: 4px;
+}
+.exit_bth {
+  margin-left: 20px;
+}
+.exit_bth a:hover {
+  color: white;
+}

@@ -32,7 +32,7 @@ if ($_SESSION['user']) {
       href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <title>getbox - международный ассистент доставки из США</title>
+    <title>Регистрация</title>
   </head>
 
   <body> 
